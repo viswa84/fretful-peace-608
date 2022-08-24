@@ -1,0 +1,46 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+#headernyaa{
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  margin-left: 0px;
+  font-family: "Montserrat";
+}
+#navvv{
+  color: #101e1e;
+  font-weight: 540;
+  font-size: 15px;
+  font-family: "Montserrat";
+  cursor: pointer;
+}
+#btn1 {
+  height: 44px;
+  font-size: 14px;
+  border-width: 0;
+  border-radius: 4px;
+  border: 1px solid #465def !important;
+  background-color: #fff;
+  color: #465def;
+  font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+/* Navbar completed */
+
+#vii{
+  margin: auto;
+  border-radius: 10px;
+}
