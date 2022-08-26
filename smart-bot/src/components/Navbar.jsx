@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { Menu, MenuButton, MenuList, MenuItem } from "@chakra-ui/react";
 import React from "react";
 import { Btn1, Btn2 } from "./Btn1";
+import SingnForm from "./SingnModal";
 
 export default function Navbar() {
   return (
@@ -60,13 +61,14 @@ export default function Navbar() {
 
             <Text>Partners</Text>
             <Text>Pricing</Text>
-            <Text>Login</Text>
+            <SingnForm   name='Login'/>
             <Flex gap="20px">
               <Btn1 name={"Free Trial"} />
               <Btn2 name={"Book Demo"} />
             </Flex>
           </Flex>
         </Box>
+        
       </Box>
     </>
   );
