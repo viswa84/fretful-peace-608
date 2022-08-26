@@ -3,21 +3,27 @@ import React from "react";
 import { Btn1, Btn2 } from "../components/Btn1";
 import Imgslider from "../components/ImgSlider";
 import Navbar from "../components/Navbar";
-import Scroller from "../components/Scroller";
 import Macimg from "./Macimg";
 import MELLO from "../images/chatbot.png";
 import CenterText from "../images/CenterText";
+import Gridboximg from "../components/Gridboximg";
+import Btncursol from "../components/Btncursol";
+import FludTAgs from "../components/Tags";
+import Map from "../components/Map";
+import Fotter from "../components/Fotter";
+
+
 
 export default function Home() {
   return (
-    <div>
+    <Box>
       <Navbar />
 
-      <Box>
+      
         <br />
         <br />
         <br />
-      </Box>
+      
       <Flex>
         <Box>
           <Image
@@ -112,10 +118,71 @@ export default function Home() {
           />
         </Box>
       </Box>
-      <Box mt={'70px'}  >
-        <CenterText/>
+
+      <Box mt={"70px"}>
+        <CenterText
+          status="true"
+          name={"Hybrid (Bot+Live Agent)"}
+          texting={
+            "Get the Most Out Of Smatbot by Simultaneously Automating & Personalizing"
+          }
+        />
       </Box>
       <Macimg />
-    </div>
+
+      <Box bg={"#f6f9ff"} boxShadow=" 0 3px 15px #4d6ff629" pb={"70px"}>
+        <Box pt={"70px"}>
+          <CenterText
+            name={"Feature Rich"}
+            texting={
+              "All the Features You Need to Take Your Business to The Next Level."
+            }
+          />
+        </Box>
+
+        <Box mt={"40px"}>
+          <Gridboximg />
+        </Box>
+      </Box>
+
+      <Box pt={"70px"}>
+        <Btncursol />
+      </Box>
+
+      <Box mt={"100px"}>
+        <CenterText
+          name={"Seamless Integrations"}
+          texting={
+            "Connect with Your Preferred Apps to Maintain Continuity & Simplify Processes Across Your Business."
+          }
+        />
+        <Box
+          ml={"10%"}
+          mt="20px"
+          bg={"#275288"}
+          mr="10%"
+          borderRadius={"20px"}
+          pt="40px"
+          pb={"40px"}
+        >
+          <Flex alignItems={"center"} justifyContent="center">
+            <Image
+              bg={"#275288"}
+              w="1000px"
+              src="https://www.smatbot.com/img/integrations.svg"
+            />
+          </Flex>
+        </Box>
+      </Box>
+
+      <Box mt={'100px'} >
+        <FludTAgs />
+
+      </Box>
+      <Box  mt={'100px'}  >
+        <Map/>
+      </Box>
+      <Box mt={'50px'}><Fotter/></Box>
+    </Box>
   );
 }
