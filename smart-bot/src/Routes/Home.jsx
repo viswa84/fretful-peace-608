@@ -12,18 +12,15 @@ import FludTAgs from "../components/Tags";
 import Map from "../components/Map";
 import Fotter from "../components/Fotter";
 
-
-
 export default function Home() {
   return (
     <Box>
       <Navbar />
 
-      
-        <br />
-        <br />
-        <br />
-      
+      <br />
+      <br />
+      <br />
+
       <Flex>
         <Box>
           <Image
@@ -175,14 +172,15 @@ export default function Home() {
         </Box>
       </Box>
 
-      <Box mt={'100px'} >
+      <Box mt={"100px"}>
         <FludTAgs />
-
       </Box>
-      <Box  mt={'100px'}  >
-        <Map/>
+      <Box mt={"100px"}>
+        <Map />
       </Box>
-      <Box mt={'50px'}><Fotter/></Box>
+      <Box mt={"50px"}>
+        <Fotter />
+      </Box>
     </Box>
   );
 }

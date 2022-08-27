@@ -59,16 +59,18 @@ export default function Navbar() {
               <Text>Instagarm</Text>
             </Link>
 
-            <Text>Partners</Text>
+            <Link to="/partners">
+           
+              <Text>Partners</Text>
+            </Link>
             <Text>Pricing</Text>
-            <SingnForm   name='Login'/>
+            <SingnForm name="Login" />
             <Flex gap="20px">
               <Btn1 name={"Free Trial"} />
               <Btn2 name={"Book Demo"} />
             </Flex>
           </Flex>
         </Box>
-        
       </Box>
     </>
   );
