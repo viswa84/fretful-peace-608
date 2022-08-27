@@ -48,45 +48,57 @@
   background: white;
 }
 
-#bonxx:hover{
-  margin: 10px;
+#bonxx:hover {
+margin: 10px;
 }
 
-
-#map{
+#map {
   background-image: url("https://www.smatbot.com/img/world-in-bg.svg");
 
-  background-size:cover
+  background-size: cover;
 }
 
 /* //fotter page */
 
-#Fotter-ptag p{
+#Fotter-ptag p {
   line-height: normal;
   font-size: 14px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #666;
-  
 }
-#Fotter-ptag p:hover{
+#Fotter-ptag p:hover {
   color: aqua;
   cursor: pointer;
- 
 }
-#Fotter-ptag2 p{
+#Fotter-ptag2 p {
   line-height: normal;
   font-size: 14px;
-  font-family: 'Poppins', sans-serif;
-  color:white;
-  
+  font-family: "Poppins", sans-serif;
+  color: white;
 }
-#fotter-hr{
- 
+#fotter-hr {
   margin-top: 10px;
-
-  
 }
-#fotter a:hover{
-
+#fotter a:hover {
   color: cyan;
 }
+#whatsgrad {
+  height: 500px;
+  
+  background: transparent linear-gradient(75deg, #5c398f 0, #2433ea 35%, #1529ee 53%, #643796 100%) 0 0 no-repeat padding-box;
+  border-radius: 30px;
+  
+}
+#gradbox{
+  border-radius: 20px;
+}
+#partInput input{
+  width: 450px;
+  
+ height: 45px;
+
+ border:  1px solid black;
+}
+/* #partInput input:last-child{
+  height: 100px;
+} */
