@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            text-align: center;
+        }
+        iframe{
+            width: 800px;
+            height: 500px;
+            border-radius: 10px;
+        }
+        h3{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+
+    <h3 >made by @viswa</h3>
+
+    <div id="video"></div>
+    
+</body>
+</html>
+<script>
+let arr = JSON.parse(localStorage.getItem("video")) ;
+let containar= document.getElementById("video")
+let newfun =(arr)=>{
+let iframe = document.createElement("iframe")
+iframe.src = `https://www.youtube.com/embed/${arr.videoId}`;
+let h3= document.createElement("h3") ;
+h3.innerHTML=arr.title ;
+
+containar.append(iframe,h3)
+
+}
+newfun(arr)
+
+</script>
